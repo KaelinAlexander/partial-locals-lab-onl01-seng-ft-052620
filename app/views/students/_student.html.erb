@@ -1,11 +1,11 @@
 <ul>
   <li>
-    Name: <%= @student.name %>
+    Name: <%= local_assigns.name %>
   </li>
   <li>
-    Birthday: <%= @student.birthday.strftime("%m/%d/%Y")  %>
+    Birthday: <%= local_assigns.birthday.strftime("%m/%d/%Y")  %>
   </li>
   <li>
-    Hometown: <%= @student.hometown.capitalize %>
+    Hometown: <%= local_assigns.hometown.capitalize %>
   </li>
 </ul>
