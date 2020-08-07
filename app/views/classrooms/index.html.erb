@@ -1,6 +1,6 @@
 <% byebug %>
 <% @classrooms.each do |classroom| %>
   <% classroom.students.each do |student| %>
-  <%= render partial: "students/student", locals: {local_assigns: student} %>
+  <%= render partial: "students/student", locals: {student: student} %>
   <% end %>
 <% end %>
